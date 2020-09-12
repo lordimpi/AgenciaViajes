@@ -8,6 +8,7 @@ import co.unicauca.tallerpolimorfismo.modelo.viaje.ViajeTodoIncluido;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 /**
@@ -46,12 +47,24 @@ public class ClienteMain {
                     new SimpleDateFormat("dd/MM/yyyy").parse("01/07/2019"), new SimpleDateFormat("dd/MM/yyyy").parse("12/07/2019"));
             viajes.add(viaje4);
         } catch (ParseException ex) {
-            //Logger.getLogger(ClienteMain.class.getName()).log(Level.SEVERE, null,ex);
+            System.out.println("Error al leer viajes: " + ex.getMessage());
         }
     }
 
+    /**
+     * Recorre e imprime datos del arreglo polimófico
+     */
     private static void mostrarViajes() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        for (Viaje viaje : viajes) {
+            System.out.println("Origen: " + viaje.getOrigen());
+            System.out.println("Destino: " + viaje.getDestino());
+            System.out.println("Fecha salida: " + viaje.getFechaSalida());
+            System.out.println("Fecha llegada: " + viaje.getFechaLlegada());
+            System.out.println("Costo: " + viaje.getCosto());
+            System.out.println("Descripción: " + viaje.descripcion());
+            System.out.println("Cualquier método: " + viaje.cualquierMetodo());
+            System.out.println("Cualquier método2: " + viaje.cualquierMetodo2());
+            System.out.println("");
+        }
     }
-
 }
