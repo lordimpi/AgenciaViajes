@@ -29,7 +29,7 @@ public class ViajeIndividual extends Viaje {
      */
     @Override
     public String descripcion() {
-        return "Disfruta de tu viaje individual";
+        return "Disfruta tu viaje individual";
     }
 
 }

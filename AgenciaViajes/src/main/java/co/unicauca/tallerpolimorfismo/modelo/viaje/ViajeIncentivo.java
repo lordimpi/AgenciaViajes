@@ -28,6 +28,15 @@ public class ViajeIncentivo extends Viaje {
         this.empresa = empresa;
     }
 
+    //Getters and Setters
+    public String getEmpresa() {
+        return empresa;
+    }
+
+    public void setEmpresa(String empresa) {
+        this.empresa = empresa;
+    }
+
     /**
      * Descripcion del viaje incentivo
      *
@@ -35,7 +44,7 @@ public class ViajeIncentivo extends Viaje {
      */
     @Override
     public String descripcion() {
-        return "Disfruta tu viaje empresarial";
+        return "Viaje incentivo que te envia la empresa Emtel";
     }
 
     /**
@@ -55,6 +64,6 @@ public class ViajeIncentivo extends Viaje {
      */
     @Override
     public String cualquierMetodo2() {
-        return "Cualquier método2 implementado en la clase base";
+        return "Método implementado en la clase hija viaje de incentivo";
     }
 }
