@@ -4,6 +4,7 @@ import java.util.Date;
 
 /**
  * Clase para crear un vaje familiar que hereda de una clase base
+ *
  * @author Santiago Acuña
  */
 public class ViajeFamiliar extends Viaje {
@@ -36,9 +37,10 @@ public class ViajeFamiliar extends Viaje {
     public void setFamilia(int familia) {
         this.familia = familia;
     }
-    
+
     /**
      * Descripcion del viaje
+     *
      * @return Mensaje de la descripcion
      */
     @Override
@@ -48,11 +50,12 @@ public class ViajeFamiliar extends Viaje {
 
     /**
      * Mensaje para un metodo sobrescrito
+     *
      * @return Mensaje del metodo sobrescrito
      */
     @Override
     public String cualquierMetodo2() {
         return "Método implementado en la clase hija viaje familiar";
     }
-    
+
 }

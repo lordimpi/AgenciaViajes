@@ -36,6 +36,7 @@ public abstract class Viaje {
 
     /**
      * Constructor parametrizado para la creacion de un viaje
+     *
      * @param origen Lugar de origen para el viaje
      * @param destino Lugar de destino para el viaje
      * @param costo Valor total del viaje

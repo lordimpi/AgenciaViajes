@@ -4,12 +4,14 @@ import java.util.Date;
 
 /**
  * Clase para crear un viaje individual que hereda de una clase base
+ *
  * @author Santiago Acuña
  */
 public class ViajeIndividual extends Viaje {
-    
-     /**
+
+    /**
      * Constructor parametrizado para la creacion de un viaje
+     *
      * @param origen Lugar de origen para el viaje
      * @param destino Lugar de destino para el viaje
      * @param costo Valor total del viaje
@@ -22,6 +24,7 @@ public class ViajeIndividual extends Viaje {
 
     /**
      * Descripcion para un viaje individual
+     *
      * @return Retorna un mensaje con la descripcion
      */
     @Override
